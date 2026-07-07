@@ -27,8 +27,8 @@ export default function Home() {
         </p>
       </header>
       <section className="mt-3 px-4">
-        <p className={` font-mono text-[13px]`}>
-          Beautiful UI interaction sounds that make websites feel physical. no audio files, no dependencies, just a simple and lightweight package.Only Import it !!</p>
+        <p className={` font-mono text-[13px] text-neutral-500`}>
+  <span className=" text-neutral-900">Beautiful UI interaction sounds that make websites feel physical.</span> no audio files, no dependencies, just a simple and lightweight package.<span className=" text-neutral-900">Only Import and Use it!!</span></p>
         
       </section>
     </main>
