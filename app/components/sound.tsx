@@ -87,7 +87,7 @@ const CirclePattern = ({
 }) => {
   return (
     <div
-      className={`w-2 h-2 rounded-full border border-black ${className}`}
+      className={`w-2 h-2 rounded-full border border-black ${className} `}
     />
   );
 };

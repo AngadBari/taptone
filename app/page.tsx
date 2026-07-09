@@ -3,6 +3,10 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
 import  {Sound}  from "./components/sound";
+import { LiveEx } from "./components/example/LiveEx";
+import Copynpm from "./components/use/Copynpm"
+import Usage from "./components/use/Usage";
+import Footer from "./components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,7 +15,7 @@ const inter = Inter({
 
 export default function Home() {
   return (
-    <main className="mx-auto min-h-screen w-full max-w-[510px] px-4">
+    <main className="mx-auto min-h-screen w-full max-w-[510px] px-4 mb-10">
       <header className="mt-10 flex items-center justify-between p-4">
         <h1
           className={`${inter.className} cursor-pointer text-[18px] transition-colors hover:text-neutral-600 `}
@@ -71,10 +75,14 @@ export default function Home() {
           </span>{" "}
           no audio files, no dependencies, just a simple and lightweight
           package.
-          <span className=" text-neutral-900">Only Import and Use it!!</span>
+          <span className=" text-neutral-900">Only Install and Use it!!</span>
         </p>
       </section>
       <Sound/>
+      <LiveEx/>
+      <Usage/>
+      <Footer/>
+      
     </main>
   );
 }
