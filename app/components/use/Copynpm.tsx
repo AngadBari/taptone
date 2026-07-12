@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Copy, Check, Section } from "lucide-react";
 
-export default function CopyButton() {
+export default function CopyNpm() {
   const [copied, setCopied] = useState(false);
 
   const command = "  npm install tap-tone";
@@ -22,12 +22,12 @@ export default function CopyButton() {
   };
 
   return (
-    <section className="mt-5 ">
+    <section className="mt-10  ">
     <button
       onClick={handleCopy}
-      className="flex w-full max-w-md items-center justify-between rounded-xl border border-neutral-200 bg-neutral-100 px-4 py-2 transition hover:bg-neutral-100"
+      className="flex w-full max-w-md items-center justify-between  border border-red-400 bg-red-100 px-4 py-2 transition"
     >
-      <code className="font-mono text-[14px] text-neutral-700">
+      <code className="font-mono text-[14px] text-neutral-700 mr-15">
        $  {command}
       </code>
 
