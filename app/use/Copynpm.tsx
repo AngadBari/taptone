@@ -39,7 +39,7 @@ export default function CopyNpm() {
           </>
         ) : (
           <>
-            <Copy size={18} />
+            <Copy  size={18} className=" text-red-600" />
             Copy
           </>
         )}

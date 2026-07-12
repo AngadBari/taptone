@@ -1,7 +1,11 @@
 
 import React from 'react'
 import { Doto } from 'next/font/google'
-import CopyNpm from "@/app/components/use/Copynpm"
+import CopyNpm from "@/app/use/Copynpm"
+import { Sound } from '../sound';
+import Link from 'next/link';
+import "tap-tone"
+
 
 const doto = Doto({
   subsets: ["latin"],
@@ -11,11 +15,20 @@ const doto = Doto({
 
 const Hero = () => {
   return (
-    <main className='mt-25'>
+    <main className='  mt-25'>
+
+       
 
         <div className= "max-w-2xl mx-auto">
+
+        <Link href={"https://github.com/AngadBari/taptone"}  className=" flex justify-center">
+            <p className=" text-center border border-red-600 px-8 py-1 font-mono text-[13px] bg-red-300 text-red-700"> v1  . <span className="">Early Preview</span> </p>
+        </Link>
+
+        <div className=" mt-6">
          <h1 className={` text-neutral-950 text-center text-[50px]  ${doto.className}`}>Your <span className=" text-red-600">Buttons</span> are </h1> 
           <h1 className={` text-neutral-950 text-center text-[40px]  ${doto.className}`}>missing a sound.</h1>
+         </div>
          </div>
 
          <div className="max-w-xl mt-8 mx-auto  px-8">
@@ -32,6 +45,15 @@ const Hero = () => {
 
          <div className=" flex justify-center items-center">
             <CopyNpm/>
+         </div>
+
+         <div className=" flex justify-center items-center ">
+            <Sound/>
+         </div>
+
+         <div className=" font-mono mt-8 flex gap-30 items-center justify-center ">
+            <a href='https://github.com/AngadBari/taptone' data-tone-droplet className=" text-[13px]"> <span className=" text-red-600">[</span> Start on Github <span className=" text-red-600">]</span></a>
+            <Link href='/use' data-tone-droplet className="text-[13px]"> <span className=" text-red-600">[</span> How to Use <span className=" text-red-600">]</span></Link>
          </div>
     </main>
   ) 

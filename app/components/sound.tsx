@@ -5,7 +5,7 @@ import "tap-tone";
 
 export const Sound = () => {
   return (
-    <section className="px-4 mt-8 flex flex-wrap gap-3">
+    <section className="px-4 mt-8 flex  flex-wrap gap-3">
       <SoundBtn data-tone-beep>
         <CirclePattern className="bg-amber-700" />
         <SoundName>Beep</SoundName>
