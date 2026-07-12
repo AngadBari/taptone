@@ -1,6 +1,7 @@
 import React from "react";
 import Copynpm from "./Copynpm";
 import CodeBook from "./CodeBook";
+import Footer from "../components/Footer";
 
 const Usage = () => {
   return (
@@ -20,8 +21,8 @@ const Usage = () => {
           Usage
         </h3>
        <CodeBook/>
-
-        
+       <Footer/>
+  
       </div>
     </>
   );
