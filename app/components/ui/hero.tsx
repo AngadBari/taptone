@@ -8,6 +8,7 @@ import "tap-tone"
 import ViewCounter from '../ViewCounter';
 
 
+
 const doto = Doto({
   subsets: ["latin"],
   weight: "800",
@@ -26,11 +27,11 @@ const Hero = () => {
             <p className=" text-center border border-red-600 px-8 py-1 font-mono text-[13px] bg-red-300 text-red-700"> v1  . <span className="">Early Preview</span> </p>
         </Link>
 
+   <div className=" flex items-center justify-center mt-3">
 
-<div className=" flex justify-center items-center mt-4">
-        <ViewCounter/>
+    <ViewCounter/>
+   </div>
 
-        </div>
 
         <div className=" mt-3">
          <h1 className={` text-neutral-950 text-center text-[50px]  ${doto.className}`}>Your <span className=" text-red-600">Buttons</span> are </h1> 

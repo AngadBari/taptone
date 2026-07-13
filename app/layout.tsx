@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,16 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+
+        {children}
+         <Script
+          src="https://page-views-api.ratneshc.com/script"
+          data-site="tap-tone.vercel.app" // Replace with your domain
+          data-path="/"
+          strategy="afterInteractive"
+        />
+        </body>
     </html>
   );
 }
