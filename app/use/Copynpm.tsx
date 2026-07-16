@@ -22,16 +22,16 @@ export default function CopyNpm() {
   };
 
   return (
-    <section className="mt-10  ">
+    <section className="mt-5  ">
     <button
       onClick={handleCopy}
       className="flex w-full max-w-md items-center justify-between  border border-red-400 bg-red-100 px-4 py-2 transition"
     >
-      <code className="font-mono text-[14px] text-neutral-700 mr-15">
+      <code className="font-mono text-[12px] text-neutral-700 mr-15">
        $  {command}
       </code>
 
-      <div data-tone-copy className="flex items-center gap-2 text-[14px] font-mono text-neutral-600 ">
+      <div data-tone-copy className="flex items-center gap-2 text-[12px] font-mono text-neutral-600 ">
         {copied ? (
           <>
             <Check size={18} className="text-green-600 " />

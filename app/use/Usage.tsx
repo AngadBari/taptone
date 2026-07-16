@@ -9,7 +9,7 @@ const Usage = () => {
       <div className="px-4 mt-5 ">
 
 {/* Install */}
-        <h3 className={` font-mono text-neutral-900 text-[14px]    `}>
+        <h3 className={` font-mono text-neutral-900 text-[12px]   `}>
           Install
         </h3>
 
@@ -17,7 +17,7 @@ const Usage = () => {
 
 {/* Usage */}        
 
-        <h3 className={` font-mono text-neutral-900 text-[14px] mt-7    `}>
+        <h3 className={` font-mono text-neutral-900 text-[12px] mt-7    `}>
           Usage
         </h3>
        <CodeBook/>

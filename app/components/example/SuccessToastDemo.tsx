@@ -15,7 +15,7 @@ export default function SuccessToastDemo() {
           setTimeout(() => setOpen(false), 3500);
         }}
         data-tone-success
-        className="rounded-xl  px-3 py-1 font-mono  transition border border-neutral-300 shadow-md bg-neutral-50 "
+        className="rounded-xl  px-3 py-1 font-mono  transition border border-neutral-300 shadow-md bg-neutral-50 text-[12px] hover:scale-110 hover:border-dashed"
       >
         Toast
       </button>

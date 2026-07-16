@@ -5,7 +5,7 @@ export const LiveEx = () => {
   return (
     <section className="px-4 mt-8 ">
       <h3
-        className={` font-mono text-neutral-900 text-[14px]   border-b py-2 border-neutral-200 `}
+        className={` font-mono text-neutral-900 text-[12px]   border-b py-2 border-neutral-200 `}
       >
         {" "}
         Example / Live
@@ -14,7 +14,7 @@ export const LiveEx = () => {
 {/* Example 1 */}
       <div className=" flex items-center justify-between border-b py-2 border-neutral-200">
         <div className="mt-2 px-3">
-          <h2 className="font-mono text-[14px] text-neutral-900 tracking-tight ">
+          <h2 className="font-mono text-[12px] text-neutral-900 tracking-tight ">
             Sound Press
           </h2>
           <p className="font-mono text-[12px] text-neutral-500">
@@ -24,7 +24,7 @@ export const LiveEx = () => {
         <div className="mt-2">
           <button
             data-tone-press
-            className="px-5 py-2 rounded-full bg-neutral-950 text-white font-mono text-[15px] hover:bg-neutral-800 transition-all duration-200"
+            className="px-5 py-2 rounded-full bg-neutral-950 text-white font-mono text-[12px] hover:bg-neutral-800 hover:scale-110 transition-all duration-200 hover:text-amber-600"
           >
             Save
           </button>
@@ -33,7 +33,7 @@ export const LiveEx = () => {
 
 <div className=" flex items-center justify-between border-b py-2 border-neutral-200">
     <div className="mt-5 px-3">
-          <h2 className="font-mono text-[14px] text-neutral-900 tracking-tight ">
+          <h2 className="font-mono text-[12px] text-neutral-900 tracking-tight ">
             Sound Success
           </h2>
           <p className="font-mono text-[12px] text-neutral-500">

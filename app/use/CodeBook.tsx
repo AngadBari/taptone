@@ -27,12 +27,12 @@ export default function CodeBook() {
   return (
     <div className=" rounded-xl border border-neutral-200 bg-neutral-50 mt-5">
       <div className="border-b border-neutral-800 px-4 py-3 flex items-center justify-between">
-        <h3 className="text-sm font-mono">React</h3>
+        <h3 className="text-sm font-mono text-[12px]">React</h3>
 
         <button
           onClick={handleCopy}
           data-tone-copy
-          className=" flex items-center gap-2 rounded-md border border-neutral-200 bg-white px-3 py-1.5 text-sm transition hover:bg-neutral-100"
+          className=" flex items-center gap-2 rounded-md border border-neutral-200 bg-white px-3 py-1.5 text-sm transition hover:bg-neutral-100 text-[12px]"
         >
           {copied ? (
             <>
@@ -48,8 +48,8 @@ export default function CodeBook() {
         </button>
       </div>
 
-      <pre className="overflow-x-auto p-6 text-sm text-neutral-800">
-        <code className="font-mono text-sm text-black">
+      <pre className="overflow-x-auto p-6  text-neutral-800">
+        <code className="font-mono text-[12px] text-black">
           <span>"use Client"</span> <br />
           <span className="text-amber-800">import "tap-tone"</span> <br />
           export default function Home() {"{"}

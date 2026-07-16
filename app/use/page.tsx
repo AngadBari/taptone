@@ -4,7 +4,7 @@ import Usage from './Usage'
 
 const page = () => {
   return (
-    <main className='mx-auto max-w-2xl mt-20'>
+    <main className='mx-auto max-w-[450px] mt-20'>
       <LiveEx/>
       <Usage/>
     </main>
