@@ -55,9 +55,10 @@ const NavBar = () => {
             </motion.svg>
         </h1>
 
-        <p className="font-mono text-[12px] text-neutral-500">
-          v1.0.6 /{" "}
+        <p  className="font-mono text-[12px] text-neutral-500 ">
+          v1.0.7 /{" "}
           <Link
+          data-hover-tick
             href="https://www.npmjs.com/package/tap-tone?activeTab=readme"
             className="text-neutral-900 "
           >

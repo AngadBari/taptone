@@ -10,6 +10,7 @@ export default function CodeBook() {
             import "tap-tone" 
             export default function Home() {
              return (
+                     <button data-hover-tick >Click Me</button>
                     <button data-tone-droplet >Click Me</button>
                     <button data-tone-click >Click Me</button>
                  );
@@ -51,17 +52,23 @@ export default function CodeBook() {
       <pre className="overflow-x-auto p-6  text-neutral-800">
         <code className="font-mono text-[12px] text-black">
           <span>"use Client"</span> <br />
-          <span className="text-amber-800">import "tap-tone"</span> <br />
+          <span className="text-red-600">import "tap-tone"</span> <br />
           export default function Home() {"{"}
           <br />
           return (
-          <br />
-          {"<"}button <span className="text-pink-400">data-tone-droplet</span>{" "}
+
+            <br />
+          {"<"}button <span className="text-purple-600">data-hover-tap</span>{" "}
           {">"}
           Click Me
           {"</"}button{">"}
           <br />
-          {"<"}button <span className="text-pink-400">data-tone-click</span>{" "}
+          {"<"}button <span className="text-purple-600">data-tone-droplet</span>{" "}
+          {">"}
+          Click Me
+          {"</"}button{">"}
+          <br />
+          {"<"}button <span className="text-purple-600">data-tone-click</span>{" "}
           {">"}
           Click Me
           {"</"}button{">"}

@@ -5,7 +5,7 @@ import "tap-tone";
 
 export const Sound = () => {
   return (
-    <section className="px-4 mt-8 flex  flex-wrap gap-3">
+    <section className="px-4 mt-8 max-w-2xl flex  flex-wrap gap-3">
       <SoundBtn data-tone-beep>
         <CirclePattern className="bg-amber-700" />
         <SoundName>Beep</SoundName>
@@ -57,6 +57,23 @@ export const Sound = () => {
         <SoundName>Mouse</SoundName>
       </SoundBtn>
 
+       <SoundBtn data-tone-tick>
+        <CirclePattern className="bg-mist-500" />
+        <SoundName>tick</SoundName>
+      </SoundBtn>
+
+        <SoundBtn data-tone-drum>
+        <CirclePattern className="bg-mist-500" />
+        <SoundName>Drum</SoundName>
+      </SoundBtn>
+
+      <SoundBtn data-tone-change>
+        <CirclePattern className="bg-mist-500" />
+        <SoundName>Change</SoundName>
+      </SoundBtn>
+
+
+
 
     </section>
 
@@ -87,7 +104,7 @@ const CirclePattern = ({
 }) => {
   return (
     <div
-      className={`w-2 h-2 rounded-full border border-black ${className} `}
+      className={`w-2 h-2 rounded-full border  border-black ${className} `}
     />
   );
 };

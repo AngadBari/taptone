@@ -11,7 +11,7 @@ export const LiveEx = () => {
         Example / Live
       </h3>
 
-{/* Example 1 */}
+      {/* Example 1 */}
       <div className=" flex items-center justify-between border-b py-2 border-neutral-200">
         <div className="mt-2 px-3">
           <h2 className="font-mono text-[12px] text-neutral-900 tracking-tight ">
@@ -24,32 +24,46 @@ export const LiveEx = () => {
         <div className="mt-2">
           <button
             data-tone-press
-            className="px-5 py-2 rounded-full bg-neutral-950 text-white font-mono text-[12px] hover:bg-neutral-800 hover:scale-110 transition-all duration-200 hover:text-amber-600"
+            className="px-5 py-2 rounded-full bg-neutral-950 text-white font-mono text-[12px] hover:bg-neutral-800 hover:scale-110 transition-all duration-200 hover:text-sky-300"
           >
             Save
           </button>
         </div>
       </div>
 
-<div className=" flex items-center justify-between border-b py-2 border-neutral-200">
-    <div className="mt-5 px-3">
+      <div className=" flex items-center justify-between border-b py-2 border-neutral-200">
+        <div className="mt-5 px-3">
           <h2 className="font-mono text-[12px] text-neutral-900 tracking-tight ">
             Sound Success
           </h2>
           <p className="font-mono text-[12px] text-neutral-500">
-           +data-tone-success
+            +data-tone-success
           </p>
         </div>
-      <div className="">
-        <SuccessToastDemo/>
-        </div>  
-    
+        <div className="">
+          <SuccessToastDemo />
+        </div>
+      </div>
+
+      <div className="border-b border-neutral-200 py-2">
+  <div className="mt-5 flex w-full items-center justify-between px-3">
+    <div>
+      <h2 className="font-mono text-[12px] tracking-tight text-neutral-900">
+        Sound hover
+      </h2>
+      <p className="font-mono text-[12px] text-neutral-500">
+      +data-hover-tap <br/>
+      +data-hover-tick 
+      </p>
+    </div>
+
+    <div className="flex gap-3 font-mono text-[12px] tracking-tight text-blue-600 " >
+      <p data-hover-tap className=" cursor-pointer hover:text-neutral-900">Home</p>
+      <p  data-hover-tap className=" cursor-pointer hover:text-neutral-900">Project</p>
+      <p  data-hover-tap  className=" cursor-pointer hover:text-neutral-900">About</p>
+    </div>
+  </div>
 </div>
-
-
-        
-
-
 
 
     </section>
